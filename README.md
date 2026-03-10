@@ -89,6 +89,9 @@ Services used:
 - Amazon API Gateway
 - IAM
 - Security Groups
+- ## AWS Cloud Architecture
+
+![AWS Architecture](diagrams/aws-cloud-portfolio-architecture.png)
 
 ---
 
