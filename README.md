@@ -1,51 +1,98 @@
 # AWS Cloud Portfolio
 
-This repository contains hands-on AWS cloud projects demonstrating real-world cloud architecture, infrastructure deployment, and serverless application development.
+This repository contains hands-on AWS cloud projects demonstrating networking, compute, storage, and serverless architecture.
 
-Each project showcases practical experience with core AWS services including networking, compute, storage, databases, and serverless technologies.
+The projects showcase practical experience building scalable and secure cloud solutions using Amazon Web Services.
 
-The goal of this portfolio is to demonstrate the design and implementation of scalable, secure, and cloud-native solutions using Amazon Web Services.
+---
 
-## Projects Included
+## Projects
 
-1. VPC Network Architecture  
-Designed and deployed a custom Amazon VPC with public and private subnets, route tables, and an internet gateway to demonstrate secure network segmentation and cloud networking fundamentals.
+### VPC Network Architecture
+Designed a custom Amazon VPC with public and private subnets, route tables, and an internet gateway.
 
-2. Static Website Hosting (Amazon S3)  
-Deployed a static website using Amazon S3 with public access configuration and bucket policies to host a simple web application.
+Services used:
+- Amazon VPC
+- Subnets
+- Route Tables
+- Internet Gateway
+- Security Groups
 
-3. EC2 Web Server Deployment  
-Launched an Amazon EC2 instance running Apache on Amazon Linux and configured security groups to allow HTTP traffic, demonstrating basic infrastructure deployment and Linux server configuration.
+---
 
-4. Serverless Lambda Function  
-Created a Python-based AWS Lambda function that returns JSON responses and uses environment variables to dynamically generate output.
+### Static Website Hosting (S3)
+Deployed a static website using Amazon S3 with public access configuration and bucket policies.
 
-5. DynamoDB NoSQL Database  
-Designed and implemented a DynamoDB table to store user data using a primary key and performed CRUD operations to manage records.
+Services used:
+- Amazon S3
+- Static Website Hosting
+- Bucket Policies
 
-6. Serverless REST API (API Gateway + Lambda + DynamoDB)  
-Built a serverless backend API that retrieves user data from DynamoDB through an AWS Lambda function triggered by API Gateway.
+---
+
+### EC2 Web Server Deployment
+Launched an EC2 instance running Apache on Amazon Linux and configured security groups to allow HTTP traffic.
+
+Services used:
+- Amazon EC2
+- Security Groups
+- Apache Web Server
+- Amazon Linux
+
+---
+
+### Serverless Lambda Function
+Created a Python-based AWS Lambda function returning JSON responses using environment variables.
+
+Services used:
+- AWS Lambda
+- Python
+- CloudWatch Logs
+
+---
+
+### DynamoDB NoSQL Database
+Created a DynamoDB table to store user records and performed CRUD operations.
+
+Services used:
+- Amazon DynamoDB
+
+---
+
+### Serverless REST API (API Gateway + Lambda + DynamoDB)
 
 Architecture:
 
 Client → API Gateway → Lambda → DynamoDB
 
+Endpoint created:
+
+GET /users
+
+This API retrieves user data stored in DynamoDB through a Lambda function.
+
+Services used:
+- API Gateway
+- AWS Lambda
+- Amazon DynamoDB
+- IAM
+
+---
+
 ## AWS Services Used
 
-Amazon VPC  
-Amazon EC2  
-Amazon S3  
-AWS Lambda  
-Amazon DynamoDB  
-Amazon API Gateway  
-IAM  
-Security Groups  
+- Amazon VPC
+- Amazon EC2
+- Amazon S3
+- AWS Lambda
+- Amazon DynamoDB
+- Amazon API Gateway
+- IAM
+- Security Groups
 
-## Skills Demonstrated
+---
 
-Cloud architecture design  
-Serverless application development  
-Infrastructure deployment on AWS  
-NoSQL database management  
-API development and integration  
-Cloud networking and security configuration
+## Author
+
+Ahmed O  
+Cloud & AWS Platform Engineer
