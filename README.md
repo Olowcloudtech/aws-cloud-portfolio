@@ -1,105 +1,25 @@
 # AWS Cloud Portfolio
 
-![AWS Architecture](diagrams/aws-cloud-portfolio-architecture.png)
-![AWS Architecture](diagrams/aws-cloud-portfolio-architecture2.png)
-![AWS Architecture](diagrams/aws-cloud-portfolio-architecture3.png)
-![AWS Architecture](diagrams/aws-cloud-portfolio-architecture4.png)
-
-
-This repository contains hands-on AWS cloud projects demonstrating networking, compute, storage, and serverless architecture.
-
-The projects showcase practical experience building scalable and secure cloud solutions using Amazon Web Services.
+This repository contains hands-on AWS cloud projects demonstrating networking, compute, storage, and serverless architectures.
 
 ---
 
-## Projects
-### VPC Network Architecture
-Designed a custom Amazon VPC with public and private subnets, route tables, and an internet gateway.
+## Architecture Overview
 
-Services used:
-- Amazon VPC
-- Subnets
-- Route Tables
-- Internet Gateway
-- Security Groups
+![AWS Architecture](diagrams/aws_portfolio_master_clean.png)
 
 ---
 
-### Static Website Hosting (S3)
-Deployed a static website using Amazon S3 with public access configuration and bucket policies.
+## Lab Architectures
 
-Services used:
-- Amazon S3
-- Static Website Hosting
-- Bucket Policies
+### VPC + EC2 Infrastructure
+![VPC Architecture](diagrams/aws-cloud-portfolio-architecture.png)
 
----
+### Data Processing Pipeline (S3 + Lambda + OpenSearch)
+![Pipeline Architecture](diagrams/aws-cloud-portfolio-architecture2.png)
 
-### EC2 Web Server Deployment
-Launched an EC2 instance running Apache on Amazon Linux and configured security groups to allow HTTP traffic.
+### Serverless Web Application
+![Serverless Web App](diagrams/aws-cloud-portfolio-architecture3.png)
 
-Services used:
-- Amazon EC2
-- Security Groups
-- Apache Web Server
-- Amazon Linux
-
----
-
-### Serverless Lambda Function
-Created a Python-based AWS Lambda function returning JSON responses using environment variables.
-
-Services used:
-- AWS Lambda
-- Python
-- CloudWatch Logs
-
----
-
-### DynamoDB NoSQL Database
-Created a DynamoDB table to store user records and performed CRUD operations.
-
-Services used:
-- Amazon DynamoDB
-
----
-
-### Serverless REST API (API Gateway + Lambda + DynamoDB)
-
-Architecture:
-
-Client → API Gateway → Lambda → DynamoDB
-
-Endpoint created:
-
-GET /users
-
-This API retrieves user data stored in DynamoDB through a Lambda function.
-
-Services used:
-- API Gateway
-- AWS Lambda
-- Amazon DynamoDB
-- IAM
-
----
-
-## AWS Services Used
-
-- Amazon VPC
-- Amazon EC2
-- Amazon S3
-- AWS Lambda
-- Amazon DynamoDB
-- Amazon API Gateway
-- IAM
-- Security Groups
-- ## AWS Cloud Architecture
-
-
----
-
-## Author
-
-Ahmed O  
-Cloud & AWS Platform Engineer
+### Serverless API (API Gateway + Lambda + DynamoDB)
+![Serverless API](diagrams/aws-cloud-portfolio-architecture4.png)
