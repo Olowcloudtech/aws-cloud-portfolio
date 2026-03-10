@@ -92,6 +92,9 @@ Services used:
 - ## AWS Cloud Architecture
 
 ![AWS Architecture](diagrams/aws-cloud-portfolio-architecture.png)
+![AWS Architecture](diagrams/aws-cloud-portfolio-architecture2.png)
+![AWS Architecture](diagrams/aws-cloud-portfolio-architecture3.png)
+![AWS Architecture](diagrams/aws-cloud-portfolio-architecture4.png)
 
 ---
 
