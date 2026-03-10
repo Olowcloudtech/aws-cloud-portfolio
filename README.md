@@ -8,6 +8,12 @@ The projects showcase practical experience building scalable and secure cloud so
 
 ## Projects
 
+![AWS Architecture](diagrams/aws-cloud-portfolio-architecture.png)
+![AWS Architecture](diagrams/aws-cloud-portfolio-architecture2.png)
+![AWS Architecture](diagrams/aws-cloud-portfolio-architecture3.png)
+![AWS Architecture](diagrams/aws-cloud-portfolio-architecture4.png)
+
+
 ### VPC Network Architecture
 Designed a custom Amazon VPC with public and private subnets, route tables, and an internet gateway.
 
@@ -91,10 +97,6 @@ Services used:
 - Security Groups
 - ## AWS Cloud Architecture
 
-![AWS Architecture](diagrams/aws-cloud-portfolio-architecture.png)
-![AWS Architecture](diagrams/aws-cloud-portfolio-architecture2.png)
-![AWS Architecture](diagrams/aws-cloud-portfolio-architecture3.png)
-![AWS Architecture](diagrams/aws-cloud-portfolio-architecture4.png)
 
 ---
 
