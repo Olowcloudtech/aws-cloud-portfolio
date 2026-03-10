@@ -1,0 +1,25 @@
+Built a serverless REST API using AWS services.
+
+Architecture:
+
+Client → API Gateway → Lambda → DynamoDB
+
+Features:
+
+• GET /users endpoint
+• Lambda function written in Python
+• DynamoDB NoSQL table for storing user data
+• API Gateway HTTP API integration
+• IAM role for Lambda permissions
+
+Technologies used:
+
+AWS Lambda
+
+Amazon DynamoDB
+
+Amazon API Gateway
+
+Python
+
+IAM
