@@ -1,132 +1,163 @@
 # AWS Cloud Architecture Portfolio
 Author: Ahmed O.
 
-This repository contains hands-on AWS cloud architecture projects demonstrating networking, compute, storage, and serverless architectures using Amazon Web Services (AWS).
+This repository contains hands-on AWS cloud architecture projects built to strengthen practical knowledge of Amazon Web Services (AWS) and prepare for real-world cloud engineering and solutions architect responsibilities.
 
-These projects were built to gain practical experience designing scalable, highly available, and serverless cloud systems similar to real-world production environments.
+The projects in this portfolio demonstrate core AWS architecture patterns including networking, compute, storage, serverless design, decoupled systems, and high availability.
 
 ---
 
-# Architecture Overview
-
-Below is the master architecture diagram representing the AWS services used across the labs in this portfolio.
+## Architecture Overview
 
 ![AWS Architecture](diagrams/aws_portfolio_master_clean.png)
 
 ---
 
-# Projects
+## Projects
 
-## 1. VPC + EC2 High Availability Architecture
+### 1. VPC + EC2 Web Server Architecture
 
-Designed a highly available web application environment using Amazon VPC.
+Built a web server on Amazon EC2 inside a VPC and configured internet access using a public IP address. Installed Apache and deployed a simple web page to validate connectivity.
 
-Key Components:
+**Services used:**
 - Amazon VPC
-- Public and Private Subnets
-- Application Load Balancer
-- EC2 Instances
-- Auto Scaling
-- Amazon RDS
+- Amazon EC2
+- Security Groups
+- Public IP addressing
 
-Concepts Practiced:
-- High availability
-- Fault tolerance
-- Scalable infrastructure
-- Network segmentation
-
-Architecture Pattern:
-
-Internet → Load Balancer → EC2 → RDS
+**Concepts practiced:**
+- VPC networking
+- Public subnet access
+- Web server deployment
+- Basic compute architecture
 
 ---
 
-## 2. Event-Driven Data Processing Pipeline
+### 2. Application Load Balancer + EC2 Architecture
 
-Built a serverless data processing pipeline triggered by file uploads.
+Built a load-balanced web architecture by placing an Application Load Balancer in front of an EC2 web server and registering the instance in a target group.
 
-Architecture:
+**Services used:**
+- Application Load Balancer
+- Target Groups
+- Amazon EC2
+- Health Checks
 
-S3 → Lambda → OpenSearch
+**Concepts practiced:**
+- Traffic distribution
+- High availability design
+- Health checks
+- Load balancing architecture
 
-Key Services Used:
+---
+
+### 3. Serverless REST API
+
+Built a serverless API using API Gateway, AWS Lambda, and DynamoDB to process and return data.
+
+**Architecture:**
+
+API Gateway → Lambda → DynamoDB
+
+**Services used:**
+- Amazon API Gateway
+- AWS Lambda
+- Amazon DynamoDB
+- Amazon CloudWatch
+
+**Concepts practiced:**
+- Serverless backend architecture
+- API integrations
+- NoSQL database usage
+- Event-driven compute
+
+---
+
+### 4. Decoupled Queue Processing Architecture
+
+Built a decoupled serverless architecture where one Lambda function sends messages to Amazon SQS, a second Lambda function processes the queue messages, and the results are stored in DynamoDB.
+
+**Architecture:**
+
+Lambda (Producer) → SQS → Lambda (Consumer) → DynamoDB
+
+**Services used:**
+- AWS Lambda
+- Amazon SQS
+- Amazon DynamoDB
+- Amazon CloudWatch
+- IAM Roles
+
+**Concepts practiced:**
+- Decoupled architecture
+- Asynchronous processing
+- Queue-based workloads
+- Event-driven messaging
+
+---
+
+### 5. Static Website Hosting
+
+Hosted a static website using Amazon S3 and validated public access configuration.
+
+**Services used:**
+- Amazon S3
+
+**Concepts practiced:**
+- Static website hosting
+- Object storage
+- Public website delivery
+
+---
+
+### 6. Event-Driven Data Processing Pipeline
+
+Built an event-driven architecture where data upload and processing services work together using AWS managed services.
+
+**Services used:**
 - Amazon S3
 - AWS Lambda
 - Amazon OpenSearch
 - Amazon CloudWatch
-- AWS IAM
+- IAM Roles
 
-Concepts Practiced:
+**Concepts practiced:**
 - Event-driven architecture
 - Serverless data processing
-- Log and search indexing
+- Search and indexing workflows
 
 ---
 
-## 3. Serverless Web Application
-
-Developed a fully serverless web application using AWS managed services.
-
-Architecture:
-
-CloudFront → S3 → API Gateway → Lambda → DynamoDB
-
-Key Services Used:
-- Amazon CloudFront
-- Amazon S3
-- Amazon API Gateway
-- AWS Lambda
-- Amazon DynamoDB
-
-Concepts Practiced:
-- Serverless application design
-- Content delivery networks
-- API-driven architecture
-
----
-
-## 4. Serverless REST API
-
-Created a scalable REST API using AWS serverless services.
-
-Architecture:
-
-API Gateway → Lambda → DynamoDB
-
-Key Services Used:
-- Amazon API Gateway
-- AWS Lambda
-- Amazon DynamoDB
-- Amazon CloudWatch
-
-Concepts Practiced:
-- Microservices architecture
-- Serverless backend systems
-- API integrations
-
----
-
-# AWS Services Used
-
-The following AWS services were used across these projects:
+## AWS Services Used
 
 - Amazon VPC
 - Amazon EC2
 - Application Load Balancer
-- Auto Scaling
-- Amazon RDS
+- Target Groups
+- Security Groups
 - Amazon S3
-- Amazon CloudFront
 - Amazon API Gateway
 - AWS Lambda
 - Amazon DynamoDB
+- Amazon SQS
 - Amazon OpenSearch
 - Amazon CloudWatch
 - AWS IAM
 
 ---
 
-# Repository Structure
+## Key Architecture Patterns Practiced
+
+- Web server deployment on EC2
+- Load-balanced web architecture
+- Serverless API design
+- Decoupled queue-based systems
+- Static website hosting
+- Event-driven processing pipelines
+
+---
+
+## Repository Structure
 
 aws-cloud-portfolio
 
@@ -140,11 +171,17 @@ aws-cloud-portfolio
 ├── vpc-architecture  
 ├── s3-static-website  
 ├── lambda-serverless-api  
+├── sqs-lambda-dynamodb-lab  
+├── alb-ec2-webserver-lab  
 
 └── README.md
 
 ---
 
+## Author
+
+Ahmed O.  
+AWS Cloud Architecture Portfolio
 # Author
 
 Ahmed O.  
